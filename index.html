@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>นับถอยหลังจนถึงเวลาที่กำหนด</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="mt-4 mb-4">นับถอยหลังจนถึงเวลาที่กำหนด</h1>
+  <div class="form-group">
+    <label for="daySelect">เลือกวัน:</label>
+    <select class="form-control" id="daySelect">
+      <option value="0">อาทิตย์</option>
+      <option value="1">จันทร์</option>
+      <option value="2">อังคาร</option>
+      <option value="3">พุธ</option>
+      <option value="4">พฤหัสบดี</option>
+      <option value="5">ศุกร์</option>
+      <option value="6">เสาร์</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>เลือกเวลาที่ต้องการ:</label>
+    <div class="row">
+      <div class="col">
+        <select class="form-control" id="hoursSelect">
+          <!-- Populate hours options dynamically -->
+        </select>
+        <label for="hoursSelect">ชั่วโมง</label>
+      </div>
+      <div class="col">
+        <select class="form-control" id="minutesSelect">
+          <!-- Populate minutes options dynamically -->
+        </select>
+        <label for="minutesSelect">นาที</label>
+      </div>
+      <div class="col">
+        <select class="form-control" id="secondsSelect">
+          <!-- Populate seconds options dynamically -->
+        </select>
+        <label for="secondsSelect">วินาที</label>
+      </div>
+    </div>
+  </div>
+  <div id="countdown"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

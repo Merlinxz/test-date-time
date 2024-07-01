@@ -1,0 +1,147 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+/* Global Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Ensure consistent box sizing */
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Center align all text in the body */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center align text within container */
+    background: #2b2b2b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center; /* Center align text within form groups */
+}
+
+label {
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    text-align: center; /* Center align text within labels */
+}
+
+/* Dropdown Styles */
+.form-control {
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-appearance: none; /* Remove default appearance on iOS */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-control option {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Adjust dropdown arrow color for dark mode */
+.form-control::after {
+    border-color: #ffffff;
+}
+
+/* Adjust hover and focus styles for dark mode */
+.form-control:hover,
+.form-control:focus {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+/* Countdown Display Styles */
+#countdown {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border: 1px solid #555555;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center; /* Center align text within countdown */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#countdown p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center; /* Center align text within countdown paragraphs */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .form-group {
+        text-align: center; /* Keep form group text centered for smaller screens */
+    }
+    .form-group .col {
+        margin-bottom: 10px;
+    }
+    .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+    #countdown {
+        padding: 15px;
+        font-size: 16px; /* Adjust font size for countdown on smaller screens */
+    }
+    #countdown p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Adjust h1 font size for very small screens */
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-control {
+        font-size: 14px;
+        padding: 6px;
+    }
+    #countdown {
+        padding: 10px;
+        font-size: 14px; /* Adjust font size for countdown on very small screens */
+    }
+    #countdown p {
+        font-size: 14px;
+    }
+}
